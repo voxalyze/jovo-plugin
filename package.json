@@ -1,0 +1,83 @@
+{
+  "name": "@voxalyze/jovo-plugin",
+  "author": "VoxSoda UG (haftungsbeschränkt)",
+  "contributors": [
+    "Marian Zange <marian@5to3.io>"
+  ],
+  "license": "Apache-2.0",
+  "version": "0.0.1",
+  "repository": "github:voxalyze/jovo-plugin",
+  "homepage": "https://voxalyze.com",
+  "description": "Voxalyze Plugin for the Jovo Framework. Reports Alexa skill usage data to the Voxalye attribution analytics service.",
+  "keywords": [
+    "alexa",
+    "jovo",
+    "aws",
+    "amazon",
+    "skill",
+    "analytics",
+    "marketing",
+    "attribution"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=8"
+  },
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "prepublish": "yarn build",
+    "test": "jest --verbose --coverage",
+    "test:watch": "jest --verbose --coverage --watchAll",
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.7.5",
+    "@babel/plugin-transform-runtime": "^7.7.5",
+    "@babel/preset-env": "^7.7.5",
+    "@babel/preset-typescript": "^7.7.2",
+    "@types/debug": "^4.1.5",
+    "@types/jest": "^24.0.18",
+    "@types/uuid": "^3.4.6",
+    "@typescript-eslint/eslint-plugin": "^2.2.0",
+    "@typescript-eslint/parser": "^2.2.0",
+    "@wessberg/rollup-plugin-ts": "^1.1.83",
+    "ask-sdk": "^2.7.0",
+    "ask-sdk-core": "^2.7.0",
+    "ask-sdk-model": "^1.24.0",
+    "ava": "^2.4.0",
+    "aws-sdk": "^2.568.0",
+    "aws-sdk-mock": "^4.5.0",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "husky": "^3.0.5",
+    "jest": "^24.9.0",
+    "jovo-cli": "^3.0.5",
+    "lint-staged": "^9.2.5",
+    "prettier": "^1.18.2",
+    "rollup": "^1.27.8",
+    "rollup-plugin-terser": "^5.1.2",
+    "ts-jest": "^24.1.0",
+    "ts-loader": "^6.1.0",
+    "ts-node": "^8.5.4",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {
+    "@voxalyze/skill-sdk": "^0.0.5",
+    "jovo-core": "^3.0.9",
+    "jovo-platform-alexa": "^3.0.13"
+  }
+}
