@@ -41,7 +41,7 @@ module.exports = {
 
 ## Error handling
 
-The Voxalyze Skill SDK will not block the execution of your skill code. If there is an error occurring in the SDK, it will be logged but not thrown.
+The Voxalyze plugin will not block the execution of your skill code. If there is an error occurring in the SDK, it will be logged but not thrown.
 
 ## Privacy and compliance
 
