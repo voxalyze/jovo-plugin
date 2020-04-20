@@ -70,7 +70,7 @@
     "typescript": "^3.6.3"
   },
   "dependencies": {
-    "@voxalyze/skill-sdk": "^0.0.5",
+    "@voxalyze/skill-sdk": "^0.0.6",
     "jovo-core": "^3.0.9",
     "jovo-platform-alexa": "^3.0.13"
   }
