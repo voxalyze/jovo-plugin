@@ -17,10 +17,15 @@ interface Config extends PluginConfig {
  */
 export class Voxalyze implements Plugin {
   /**
+   * Plugin name
+   */
+  name = 'Voxalyze';
+
+  /**
    * Default plugin config
    */
   config: Config = {
-    apiKey: undefined,
+    apiKey: '',
   };
 
   /**
