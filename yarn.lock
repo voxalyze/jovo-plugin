@@ -1299,14 +1299,15 @@
     semver "^6.3.0"
     tsutils "^3.17.1"
 
-"@voxalyze/skill-sdk@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@voxalyze/skill-sdk/-/skill-sdk-0.0.5.tgz#fbfd98faf00074284b214f66c2d5cea374ebb258"
-  integrity sha512-x+YibdCJLTjGKFRB6C54tmIXfhexQh4JFjDfVy0PLu2v/U8PRBrriPjFNbMrLegvaGehqIIcITIDUt+jLQMTrw==
+"@voxalyze/skill-sdk@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@voxalyze/skill-sdk/-/skill-sdk-0.0.6.tgz#04e89b0a8e41083669c514d2e180a998b2598fb9"
+  integrity sha512-jiJDCxwt9PPUxGYca39xw/BH7jQogdFtjT5mMeSBUPOub2qX7+vzUgVn0y4Ryd3lg+NOF1sNXR4sz/sVFt1e8g==
   dependencies:
     "@types/aws-lambda" "^8.10.36"
     ask-sdk-core "^2.7.0"
     ask-sdk-model "^1.24.0"
+    aws-sdk "^2.658.0"
     axios "^0.19.0"
     debug "^4.1.1"
     uuid "^3.3.3"
@@ -1714,7 +1715,7 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-aws-sdk@^2.344.0:
+aws-sdk@^2.344.0, aws-sdk@^2.658.0:
   version "2.658.0"
   resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.658.0.tgz#dd0b1225d2b42eebdf9c4347a9568f317c0b90b1"
   integrity sha512-vb+CorOG2lod4ZztrVaE3hcSjTwnB9HhTOnD/2R9YJtIUGTJqL0CIDTwo0Q384GFROtDhp7j6SX7oKFwdzDEuA==
