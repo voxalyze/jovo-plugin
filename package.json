@@ -5,7 +5,7 @@
     "Marian Zange <marian@5to3.io>"
   ],
   "license": "Apache-2.0",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": "github:voxalyze/jovo-plugin",
   "homepage": "https://voxalyze.com",
   "description": "Voxalyze Plugin for the Jovo Framework. Reports Alexa skill usage data to the Voxalye attribution analytics service.",
