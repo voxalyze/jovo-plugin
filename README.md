@@ -4,6 +4,12 @@
 
 With Voxalyze, you can get real-time reports and insights about your Alexa skill visitors on multiple dimensions. This Jovo Plugin reports meta-data from your Alexa Skill to our API. We match the data received from your skill with data we collect through our campaign proxy. This allows us to track where your visitors come from and which of your campaigns perform best.
 
+## Important notice
+
+This plugin and the underlying tracking SDK are currently in beta stage. If you experience any issue, please report it on this Github project.
+
+The **Jovo Debugger** is currently not supported. You can still use it, but the Voxalyze plugin will log `[VoxalyzeSDK][ERROR] HTTP dispatch failed: 403 Forbidden` since the Voxalyze API is not accepting the Jovo Debugger dummy skill IDs.
+
 ## Installation
 
 To use the Voxalyze Jovo plugin, simply install it to your project dependencies:
