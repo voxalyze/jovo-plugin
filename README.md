@@ -4,12 +4,6 @@
 
 With Voxalyze, you can get real-time reports and insights about your Alexa skill visitors on multiple dimensions. This Jovo Plugin reports meta-data from your Alexa Skill to our API. We match the data received from your skill with data we collect through our campaign proxy. This allows us to track where your visitors come from and which of your campaigns perform best.
 
-## Important notice
-
-This plugin and the underlying tracking SDK are currently in beta stage. If you experience any issue, please report it on this Github project.
-
-The **Jovo Debugger** is currently not supported. You can still use it, but the Voxalyze plugin will log `[VoxalyzeSDK][ERROR] HTTP dispatch failed: 403 Forbidden` since the Voxalyze API is not accepting the Jovo Debugger dummy skill IDs.
-
 ## Installation
 
 To use the Voxalyze Jovo plugin, simply install it to your project dependencies:
@@ -45,13 +39,26 @@ module.exports = {
 };
 ```
 
+## Testing Voxalyze with the Jovo Debugger
+
+If you want to test sending data to Voxalyze with the Jovo Debugger, you'll need to follow these steps:
+
+1. After installing the Voxalyze plugin, execute `jovo run` and open the Debugger in your browser
+2. Click the 'Launch' button to simulate an Alexa launch request
+3. Check out the log on your console. You'll find a random test skill ID there
+4. Add the skill ID to your Jovo app's `config.js` at `plugins.Voxalyze.debugSkillId`
+5. Add a new skill with the same skill ID in the [Voxalyze web app](https://app.voxalyze.com/skillss)
+
+Now you should see your debugger runs showing up on Voxalyze. Please note that it takes up to 5 minutes for new
+data to get processed.
+
 ## Error handling
 
 The Voxalyze plugin will not block the execution of your skill code. If there is an error occurring in the SDK, it will be logged but not thrown.
 
 ## Privacy and compliance
 
-The Voxalyze Skill SDK does not send any personally identifiable information (PII) to our servers. You are free to choose what handlers you want to track. Although you need to track at least the LaunchRequest handler to receive meaningful campaign attribution data. Below you can find an exact overview what data we collect through this SDK.
+The Voxalyze plugin does not send any personally identifiable information (PII) to our servers. You are free to choose what handlers you want to track. Although you need to track at least the LaunchRequest handler to receive meaningful campaign attribution data. Below you can find an exact overview what data we collect through this SDK.
 
 | Field       | Description                                                                                                                                                     |
 | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
